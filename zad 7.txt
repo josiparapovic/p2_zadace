@@ -1,0 +1,5 @@
+import  zad6
+
+
+
+zad6.unazad

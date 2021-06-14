@@ -1,0 +1,24 @@
+imort re
+
+
+
+string=str(input("Unesi string"))
+
+string=string.lower()
+
+
+regex="^j.*[0-5]\s.*a$"
+
+
+result=re.findall(regex,string)
+
+
+
+if reuslt:
+    
+	print("podudaranje")
+
+
+else:
+    
+	print("nema podudaranja")

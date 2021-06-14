@@ -1,0 +1,23 @@
+import re
+
+email=input("unesite email:")
+
+regex="(^[a-zA-Z].*)[.]([a-zA-Z].*)@fpmoz.sum.ba$"
+result=re.match(regex,email)
+
+edu=input("unesite edu")
+regex1="(^[a-zA-Z].*)[.]([a-zA-Z].*)[0-9]*@sum.ba$"
+result1=re.match(regex1,edu)
+
+if result:
+	print("email tocan")
+	if result1:
+		print("eduid tocan")
+	else:
+		print("eduid nije tocan")
+else:
+	print("email netocan")
+	if result1:
+		print("eduid tocan")
+	else:
+		print("eduid netocan")
